@@ -10,3 +10,6 @@ def normalise(v: tuple[float, float]) -> tuple[float, float]:
 def set_magnitude(v: tuple[float, float], mag: float) -> tuple[float, float]:
     norm = normalise(v)
     return (norm[0] * mag, norm[1] * mag)
+
+def dot(v1: tuple[float, float], v2: tuple[float, float]) -> float:
+    return v1[0] * v2[0] + v1[1] * v2[1]
